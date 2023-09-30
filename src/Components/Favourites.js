@@ -1,9 +1,20 @@
-import React from 'react'
+// Favorites.js
 
-const Favourites = () => {
+import React from 'react';
+
+const Favourites = ({ favoriteMemes }) => {
   return (
-    <div>Favourites</div>
-  )
+    <div>
+      <h1 className='text-center text-fuchsia-800 text-5xl md:italic'>Favorites Page</h1>
+      <ul>
+        {favoriteMemes.map((meme) => (
+          <li key={meme.id}>
+            <img src={meme.url} alt="Favorite Meme" />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default Favourites
+export default Favourites;
