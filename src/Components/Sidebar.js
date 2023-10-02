@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="fixed top-0 left-0 h-screen w-20 flex flex-col text-black bg-red-400">
+    <div className="fixed top-0 left-0 h-screen w-20 flex flex-col text-black bg-pink-950">
       <Link to="/"> {/* Link to the Home page */}
         <SideBarIcon icon={<ImHome3 size="48" />} />
       </Link>

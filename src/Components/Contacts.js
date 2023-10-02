@@ -77,12 +77,19 @@ const Contacts = () => {
             className="border-black border-2 rounded-lg p-2 mx-auto text-center block"
           ></textarea>
         </div>
-        <button type="submit" className="send-button mt-4">
-          Send
-        </button>
+        <div className="text-center mt-4">
+        <button
+  type="submit"
+  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4"
+>
+  Send
+</button>
+
+        </div>
       </form>
     </div>
   );
 };
+
 
 export default Contacts;

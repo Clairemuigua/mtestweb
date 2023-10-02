@@ -66,6 +66,11 @@ const Home = ({ addFavoriteMeme }) => {
     borderRadius: '5px',
     cursor: 'pointer',
   };
+  
+  const contentStyle = {
+    marginLeft: '250px', // Adjust the width of your sidebar
+    padding: '20px', // Add some padding to separate content from sidebar
+  };
 
   return (
     <div className='content bg-pink-200'>

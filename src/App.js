@@ -7,7 +7,7 @@ import Home from './Components/Home';
 import Favourites from './Components/Favourites';
 import AboutUs from './Components/AboutUs';
 import Contact from './Components/Contacts';
-
+import Footer from './Components/Footer';
 function App() {
   // Define a state to store favorite memes
   const [favoriteMemes, setFavoriteMemes] = useState([]);
@@ -33,6 +33,7 @@ function App() {
             element={<Favourites favoriteMemes={favoriteMemes} />}
           />
         </Routes>
+<Footer />
       </div>
     </Router>
   );
